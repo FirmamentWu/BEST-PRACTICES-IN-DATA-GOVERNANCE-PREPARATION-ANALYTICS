@@ -91,6 +91,116 @@ Time-based train/test splits can reveal structural changes that random splits wo
 
 ---
 
+## Visualizations | 可视化图表
+
+### Fig 1: Energy Structure Evolution | 能源结构演变
+![fig1](../outputs/figures/fig1_energy_structure.png)
+
+**EN:** Stacked area chart showing US energy mix from 1973-2024. Fossil fuels (red) declined from 95% to 82%, while renewables (green) grew from 3% to 9%. Nuclear (orange) stabilized around 8% since 1990s.
+
+**中文:** 堆叠面积图展示1973-2024年美国能源结构。化石燃料（红色）从95%下降到82%，可再生能源（绿色）从3%增长到9%。核能（橙色）自1990年代以来稳定在8%左右。
+
+---
+
+### Fig 2: CO2 Intensity Trend | CO2强度趋势
+![fig2](../outputs/figures/fig2_co2_intensity_trend.png)
+
+**EN:** Dual-axis chart showing CO2 intensity (blue) declining alongside fossil fuel share (red dotted). Clear downward trend with acceleration after 2014.
+
+**中文:** 双轴图显示CO2强度（蓝色）与化石燃料占比（红色虚线）同步下降。明显的下降趋势，2014年后加速。
+
+---
+
+### Fig 3: Energy vs CO2 Decoupling | 能源与CO2脱钩
+![fig3](../outputs/figures/fig3_energy_vs_co2.png)
+
+**EN:** Shows decoupling phenomenon - total energy consumption (green) remained stable since 2007, while CO2 emissions (red) declined. This indicates improved energy efficiency and cleaner energy mix.
+
+**中文:** 显示脱钩现象——总能源消耗（绿色）自2007年以来保持稳定，而CO2排放（红色）下降。这表明能源效率提高和能源结构更清洁。
+
+---
+
+### Fig 4: Correlation Matrix | 相关矩阵
+![fig4](../outputs/figures/fig4_correlation_matrix.png)
+
+**EN:** Heatmap showing correlations between variables. Key findings: Fossil share strongly positively correlated with CO2 intensity (+0.88), Renewable share strongly negatively correlated (-0.95).
+
+**中文:** 热力图显示变量之间的相关性。主要发现：化石能源占比与CO2强度强正相关（+0.88），可再生能源占比强负相关（-0.95）。
+
+---
+
+### Fig 5: Scatter Plots with Regression | 散点图与回归线
+![fig5](../outputs/figures/fig5_scatter_shares_vs_intensity.png)
+
+**EN:** Three scatter plots showing relationship between each energy share and CO2 intensity. Regression lines confirm: higher fossil = higher CO2 intensity; higher renewable = lower CO2 intensity.
+
+**中文:** 三个散点图显示每种能源占比与CO2强度的关系。回归线确认：化石能源越高=CO2强度越高；可再生能源越高=CO2强度越低。
+
+---
+
+### Fig 6: Variable Distributions | 变量分布
+![fig6](../outputs/figures/fig6_distributions.png)
+
+**EN:** Histograms with KDE showing distribution of key variables. Used to check for skewness and normality assumptions before modeling.
+
+**中文:** 带核密度估计的直方图显示关键变量的分布。用于在建模前检查偏度和正态性假设。
+
+---
+
+### Fig 7: Outlier Detection | 异常值检测
+![fig7](../outputs/figures/fig7_outliers.png)
+
+**EN:** Box plots for outlier detection using IQR method. Most variables show no significant outliers, indicating data quality is acceptable.
+
+**中文:** 使用IQR方法的箱线图进行异常值检测。大多数变量没有显著异常值，表明数据质量可接受。
+
+---
+
+### Fig 8: Decision Tree | 决策树
+![fig8](../outputs/figures/fig8_decision_tree.png)
+
+**EN:** Decision tree visualization showing how the model splits data. Fossil share is the primary splitting variable, confirming its importance in predicting CO2 intensity.
+
+**中文:** 决策树可视化显示模型如何拆分数据。化石能源占比是主要拆分变量，确认其在预测CO2强度中的重要性。
+
+---
+
+### Fig 9: Model Comparison | 模型比较
+![fig9](../outputs/figures/fig9_model_comparison.png)
+
+**EN:** Bar charts comparing model performance. Full data models achieve high R² (0.92), while time-split test shows negative R² due to structural break - a key data governance insight.
+
+**中文:** 柱状图比较模型性能。全数据模型达到高R²（0.92），而时间拆分测试由于结构性断裂显示负R²——这是关键的数据治理洞察。
+
+---
+
+### Fig 10: Actual vs Predicted | 实际值与预测值
+![fig10](../outputs/figures/fig10_actual_vs_predicted.png)
+
+**EN:** Scatter plots comparing actual vs predicted values for each model. Points close to diagonal line indicate good predictions.
+
+**中文:** 散点图比较每个模型的实际值与预测值。点越接近对角线表示预测越准确。
+
+---
+
+### Fig 11: Residual Analysis | 残差分析
+![fig11](../outputs/figures/fig11_residual_analysis.png)
+
+**EN:** Left: Residual distribution (should be centered at 0). Right: Residuals vs predicted (should show no pattern). Used to validate model assumptions.
+
+**中文:** 左：残差分布（应以0为中心）。右：残差与预测值（应无明显模式）。用于验证模型假设。
+
+---
+
+### Fig 12: Final Summary | 最终摘要
+![fig12](../outputs/figures/fig12_final_summary.png)
+
+**EN:** Complete trend analysis showing actual CO2 intensity (blue), model prediction (green dashed), and highlighted structural break period (yellow, 2014-2024) where decline accelerated beyond model predictions.
+
+**中文:** 完整趋势分析显示实际CO2强度（蓝色）、模型预测（绿色虚线）和突出显示的结构性断裂期间（黄色，2014-2024），该期间下降速度超出模型预测。
+
+---
+
 ## Conclusions | 结论
 
 ### EN:
