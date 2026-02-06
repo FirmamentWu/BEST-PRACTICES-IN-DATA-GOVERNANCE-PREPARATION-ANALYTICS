@@ -9,9 +9,9 @@
 
 | Name | Chinese Name | Role |
 |------|--------------|------|
-| **Alan** | 吴翔宇 (Xiangyu Wu) | Project Lead & Data Engineering 项目负责人与数据工程 |
-| **Zheng Congyun** | 郑聪云 | Data Analysis & Visualization 数据分析与可视化 |
-| **He Yu** | 何雨 | Machine Learning & Modeling 机器学习与建模 |
+| **Alan** | 武翔宇 (Xiangyu Wu) | Project Lead & Data Engineering 项目负责人与数据工程 |
+| **Zheng Congyun** | 郑从云 | Data Analysis & Visualization 数据分析与可视化 |
+| **He Yu** | 何誉 | Machine Learning & Modeling 机器学习与建模 |
 | **Ma Shuting** | 马舒婷 | Documentation & Presentation 文档与演示 |
 
 **Course | 课程:** CA6003 - Best Practices in Data Governance, Preparation and Analytics
